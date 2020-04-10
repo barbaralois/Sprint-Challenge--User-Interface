@@ -33,13 +33,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+Semantic HTML is used to give meaning to the sections of your page. It tells browsers and screen readers what each section is, to help prioritize items and make it easier to navigate around the page. Though divs and other presentational HTML tags are useful for styling, they do not have the same clarity. If I say header, or footer, you know where to look on the page. H1 will always be the largest title. Sections are divided based on content meaning. If you made a whole page with divs it would still work, but it would be extremely difficult to differentiate between the items on the page.
+
 2. What are the 4 areas of the box model?
+
+Content is in the center, surrounded by padding, then border, and finally margin. 
 
 3. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+Align-items modifies things on the cross-axis, so when the flex direction is row it centers items vertically, and when the flex direction is column it centers them horizontally. 
+
 4. Explain why git is valuable to a team of developers.
 
+Git is extremely valuable to a team of developers because it allows multiple people to be working with the same base code at the same time, and helps make it easier to merge changes together and resolve issues. A version control system also keeps track of who uploaded changes, when they were put up, and allows you to roll the project back if a new modification is causing issues without you having to save all of the files on your own hardware. From a logistics standpoint, files are also stored online and can be accessed from anyone's computer or any desktop at the office/home. 
+
 5. Define mobile-first design in your own words.
+
+Mobile-first design consists of building your website to fit on a phone, first. Everything coded into the CSS makes it look great on a small screen. From there, you use media queries for larger screen widths to modify what is displayed to look better on the larger screens. A benefit off mobile-first design is that your site will be legible/useable on all screen sizes, even if the design is far from optimized on larger screens. When creating a desktop-first design, there will often be sections of the site that you can't access from a small screen. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
