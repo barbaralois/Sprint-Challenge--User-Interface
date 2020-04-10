@@ -136,6 +136,7 @@ html,
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
+  width: 100%;
 }
 
 h1,
@@ -153,7 +154,7 @@ p {
 }
 
 .container {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -188,9 +189,9 @@ p {
 }
 
 .middle-content .boxes .box {
-  width: 12.5%;
+  width: 100px;
   height: 100px;
-  margin: 20px 2.5%;
+  margin: 2.5%;
   color: white;
   display: flex;
   align-items: center;
@@ -272,13 +273,18 @@ footer nav a {
 
 header {
   display: flex;
-  width: 800px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1% 0;
 }
 
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   width: 100%;
+  align-items: flex-end;
 }
 
 nav a {
@@ -286,6 +292,110 @@ nav a {
   color: black;
 }
 
+nav a:hover {
+  color: red;
+}
+
 .featured-img {
-  padding: 3% 0;
+  padding: 2% 0;
+  width: 100%;
+}
+
+.lambda {
+  object-fit: none;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  .lambda {
+    padding: 1% 0 0 2%;
+  }
+
+  footer nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-nav a {
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 80%;
+    padding: 1.5%;
+    color: lightgray;
+    text-align: center;
+  }
+
+  .top-nav #home {
+    background-color: lightgray;
+    color: dimgray;
+    font-weight: bold;
+    border: 1px solid gray;
+    text-shadow: 1px 1px white;
+  }
+
+  .boxes {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .lambda {
+    padding: 3% 0 8%;
+  }
+
+  .featured-img {
+    object-fit: none;
+    max-width: 100%;
+    padding: 6% 0;
+  }
+
+  .top-content .text-container {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  .text-container h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    color: dimgray;
+    line-height: 1.3;
+  }
+
+  .middle-content h2 {
+    font-size: 1.4rem;
+    padding: 0 6% 2%;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .bottom-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .bottom-content .text-container {
+    padding: 0 1% 20px;
+  }
 }
